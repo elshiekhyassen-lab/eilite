@@ -84,7 +84,7 @@ list-style:none;
 
 .nav-links a{
 text-decoration:none;
-color:#031634;
+color:#003263;
 font-size:1.2rem;
 font-weight:700;
 }
@@ -103,7 +103,7 @@ position:absolute;
 bottom:-80px;
 left:50%;
 transform:translateX(-50%);
-background:#031634;
+background:#003263;
 color:#fff;
 width:85%;
 max-width:1050px;
@@ -145,7 +145,7 @@ margin-bottom:90px;
 }
 
 .card-light{
-background:#eef1f5;
+background:#e6e8eb;
 width:255px;
 height:320px;
 
@@ -184,7 +184,7 @@ margin-bottom:25px;
 }
 
 .services-container{
-background:#031634;
+background:#003263;
 padding:80px 50px;
 margin-bottom:70px;
 color:#fff;
@@ -232,25 +232,43 @@ position:relative;
 z-index:2;
 height:100%;
 display:flex;
-justify-content:space-around;
-align-items:flex-end;
-padding-bottom:40px;
+justify-content:center;
+align-items:center;
+gap:20px;
+padding:30px;
 flex-wrap:wrap;
 }
 
 .premium-item{
+background:#4ea3d8;
 color:#fff;
-font-size:1.3rem;
+padding:18px 25px;
+border-radius:10px;
+font-size:1.2rem;
 font-weight:700;
-} 
+min-width:180px;
+text-align:center;
+}
 .risk-section{
 margin-bottom:80px;
 }
 
 .risk-grid{
 display:flex;
-gap:35px;
+justify-content:center;
+gap:20px;
 flex-wrap:wrap;
+}
+
+.risk-item{
+background:#4ea3d8;
+color:#fff;
+padding:18px 25px;
+border-radius:10px;
+font-size:1.2rem;
+font-weight:700;
+text-align:center;
+min-width:220px;
 }
 
 .risk-item{
@@ -413,9 +431,24 @@ scroll-behavior:smooth;
 }
 
 .nav-links{
-    flex-direction:column;
-    gap:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:nowrap;
+    overflow-x:auto;
 }
+
+.nav-links li{
+    flex:0 0 auto;
+}
+
+.nav-links a{
+    font-size:14px;
+    white-space:nowrap;
+}
+
 
 .hero-banner{
     height:250px;
